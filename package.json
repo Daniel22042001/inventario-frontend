@@ -1,0 +1,16 @@
+{
+  "name": "inventario-frontend",
+  "version": "1.0.0",
+  "description": "Frontend para Sistema de Gestión de Inventario - Daniel Yaguachi",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx http-server . -p $PORT -c-1",
+    "dev": "npx http-server . -p 8080 -c-1 -o"
+  },
+  "keywords": ["inventario", "frontend", "fastapi", "bootstrap"],
+  "author": "YAGUACHI GALARZA DANIEL ALEJANDRO",
+  "license": "MIT",
+  "dependencies": {
+    "http-server": "^14.1.1"
+  }
+}
