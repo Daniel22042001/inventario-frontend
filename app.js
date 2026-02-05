@@ -1,6 +1,6 @@
 // Configuración
 const API_URL_KEY = 'inventario_api_url';
-let API_BASE_URL = localStorage.getItem(API_URL_KEY) || '';
+let API_BASE_URL = localStorage.getItem(API_URL_KEY) || 'https://web-production-ad4c8.up.railway.app';
 let allItems = []; // Cache de todos los items
 
 // Cargar URL guardada al iniciar
@@ -9,10 +9,16 @@ window.addEventListener('DOMContentLoaded', () => {
     if (savedUrl) {
         document.getElementById('apiUrl').value = savedUrl;
         API_BASE_URL = savedUrl;
-        checkApiStatus();
-        loadStatistics();
-        loadItems();
+    } else {
+        // Si no hay URL guardada, usar la predeterminada
+        API_BASE_URL = 'https://web-production-ad4c8.up.railway.app';
+        localStorage.setItem(API_URL_KEY, API_BASE_URL);
     }
+    
+    // Conectar automáticamente
+    checkApiStatus();
+    loadStatistics();
+    loadItems();
 });
 
 // Guardar URL de API

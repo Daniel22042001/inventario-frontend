@@ -255,8 +255,12 @@ https://inventario-frontend-production.up.railway.app
 - **Bootstrap Icons**: Iconografía
 - **http-server**: Servidor estático
 
+## 👨‍💻 Autor
 
+**YAGUACHI GALARZA DANIEL ALEJANDRO**  
+Universidad Católica de Cuenca  
+Sistema de Gestión de Inventario - Examen Final
 
 ---
 
-
+**¡Éxito en tu examen! 20/20** 🎯✨
